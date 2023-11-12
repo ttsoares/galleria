@@ -8,6 +8,7 @@ import { BiExpand } from "react-icons/bi";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Modal from "@/components/Modal";
 
 import DATA from "/new_data.json";
 const gall_size = DATA.length;
@@ -125,10 +126,10 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="absolute botton-0 left-0 w-full">
+      <div className="absolute bottom-0 left-0 w-full">
         <Footer
           name={DATA[item].name}
-          autor={DATA[item].artist.name}
+          author={DATA[item].artist.name}
           increment={increment}
           decrement={decrement}
           first={first}
@@ -137,34 +138,13 @@ const Page = () => {
           gall_size={gall_size}
         />
       </div>
-      {showModal && (
-        <div className="absolute flex flex-col  lg:justify-center items-center w-full h-screen inset-0 bg-black/90 z-40 overflow-hidden">
-          <div className="w-[90%] mt-32 md:mt-0">
-            <div className="w-[85%] mx-auto">
-              <div className="relative w-full">
-                <p
-                  onClick={handleOpen}
-                  className="text-center text-white hover:cursor-pointer hover:text-medium lg:mb-8 py-3"
-                >
-                  CLOSE
-                </p>
-                <div className="w-full h-[327px] md:h-[800px] relative">
-                  <Image
-                    src={DATA[item].images.gallery}
-                    alt={DATA[item].name}
-                    fill
-                    style={{
-                      objectFit: "contain",
-                    }}
-                    sizes="(max-width: 375px) 100vw, (max-width: 960px) 80vw, 45vw"
-                    className="aspect-auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+
+      <Modal
+        open={showModal}
+        handleOpen={handleOpen}
+        image={DATA[item].images.gallery}
+        name={DATA[item].name}
+      />
     </main>
   );
 };

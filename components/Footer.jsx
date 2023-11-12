@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 //---------------------
 const Footer = ({
   name,
-  autor,
+  author,
   increment,
   decrement,
   first,
@@ -62,7 +62,7 @@ const Footer = ({
       ></div>
       <div className="w-fit">
         <p className="text-xl font-bold">{name}</p>
-        <p>{autor}</p>
+        <p>{author}</p>
       </div>
       <div className="w-12 mt-5 flex justify-between">
         <BsChevronBarLeft
