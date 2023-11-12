@@ -76,7 +76,7 @@ const Page = () => {
             md:px-8 md:pt-0 md:-top-0.5 md:left-[210px] md:text-left md:w-[570px]
             lg:px-16 lg:w-[590px] lg:left-[330px]"
             >
-              <div className="bg-white w-full h-40 px-5 md:w-full md:px-14 md:h-auto md:pb-14 lg:pb-0 lg:px-4">
+              <div className="bg-white w-full h-40 px-5 md:w-full md:px-14 md:h-auto md:pb-14 lg:pb-8 lg:px-4">
                 <p className="text-3xl pt-6 md:pt-0 md:mt-0 md:text-4xl font-bold md:ml-6 lg:ml-14">
                   {DATA[item].name}
                 </p>

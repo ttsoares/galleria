@@ -18,11 +18,11 @@ const Modal = ({ open, handleOpen, image, name }) => {
           <div className="relative w-full flex flex-col">
             <p
               onClick={handleOpen}
-              className="w-auto text-center text-white hover:cursor-pointer hover:text-medium md:mt-10 mb-5 lg:mb-8"
+              className="w-auto text-center text-white hover:cursor-pointer hover:text-medium md:mt-10 md:mb-5 lg:mb-8"
             >
               CLOSE
             </p>
-            <div className="w-full h-[327px] md:h-[700px] lg:h-[900px] relative">
+            <div className="w-full h-[400px] md:h-[700px] lg:h-[900px] relative">
               <Image
                 src={image}
                 alt={name}
