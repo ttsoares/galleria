@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bore {
+    @apply border border-red-400;
+  }
+
+  .bobl {
+    @apply border border-blue-400;
+  }
+}
