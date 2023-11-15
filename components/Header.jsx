@@ -19,13 +19,16 @@ const Header = () => {
       </div>
       {pathname === "/" ? (
         <Link
-          className="text-[8px] md:text-xs text-dark tracking-[3px] font-bold hover:text-black"
+          className="text-[0.5rem] md:text-xs text-dark tracking-[0.19rem] font-bold hover:text-black"
           href="/show"
         >
           START SLIDESHOW
         </Link>
       ) : (
-        <Link className="text-xs text-dark tracking-[3px] font-bold" href="/">
+        <Link
+          className="text-xs text-dark tracking-[0.19rem] font-bold"
+          href="/"
+        >
           STOP SLIDESHOW
         </Link>
       )}

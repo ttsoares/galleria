@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     fontSize: {
       xs: ["0.75rem", "0.938rem"],
-      sm: ["0.813rem", "1.63rem"],
+      sm: ["0.813rem", "1.063rem"],
       base: ["0.875rem", "1.75rem"],
       lg: ["0.938rem", "1.813rem"],
       xl: ["1.25rem", "1.75rem"],
-      "2xl": ["1.125rem", "1.375rem"],
+      "2xl": ["1.313rem", "1.375rem"],
       "3xl": ["1.5rem", "1.813rem"],
       "4xl": ["3.5rem", "4rem"],
       "5xl": ["12.5rem", "9.375rem"],
