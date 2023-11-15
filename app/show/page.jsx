@@ -45,9 +45,9 @@ const Page = () => {
       <div className="w-full relative md:mb-0 lg:mb-40 ">
         <div className="flex flex-col lg:flex-row p-2 md:p-4 w-full lg:justify-between items-center">
           {/* Images */}
-          <div className="relative flex flex-col md:block w-full lg:w-[60%] md:h-[580px]">
+          <div className="relative flex flex-col md:block w-full lg:w-[60%] md:h-[36.25rem]">
             {/*  MD & LG*/}
-            <div className="hidden md:block relative w-[475px] h-[560px] ">
+            <div className="hidden md:block relative w-[29.688rem] h-[35rem] ">
               <Image
                 src={DATA[item].images.hero.large}
                 alt={DATA[item].name}
@@ -56,7 +56,7 @@ const Page = () => {
               />
             </div>
             {/* SM */}
-            <div className="md:hidden w-full aspect-auto h-[300px] relative">
+            <div className="md:hidden w-full aspect-auto h-[18.75rem] relative">
               <Image
                 src={DATA[item].images.hero.small}
                 alt={DATA[item].name}
@@ -66,15 +66,15 @@ const Page = () => {
             </div>
             <div
               onClick={handleOpen}
-              className="absolute top-5 left-3 md:top-auto md:bottom-8 md:left-5 text-white  text-[8px] md:text-xs p-2 bg-black flex justify-center items-center hover:cursor-pointer hover:bg-dark"
+              className="absolute top-5 left-3 md:top-auto md:bottom-8 md:left-5 text-white  text-[0.5rem] md:text-xs p-2 bg-black flex justify-center items-center hover:cursor-pointer hover:bg-dark"
             >
               <BiExpand className="w-4 h-4 mr-2" />
               <p>VIEW IMAGE</p>
             </div>
             <div
               className="absolute top-52 -left-0.5 pt-4 w-[80%] 
-            md:px-8 md:pt-0 md:-top-0.5 md:left-[210px] md:text-left md:w-[570px]
-            lg:px-16 lg:w-[590px] lg:left-[330px]"
+            md:px-8 md:pt-0 md:-top-0.5 md:left-[13.125rem] md:text-left md:w-[35.625rem]
+            lg:px-16 lg:w-[36.875rem] lg:left-[20.625rem]"
             >
               <div className="bg-white w-full h-40 px-5 md:w-full md:px-14 md:h-auto md:pb-14 lg:pb-8 lg:px-4">
                 <p className="text-3xl pt-6 md:pt-0 md:mt-0 md:text-4xl font-bold md:ml-6 lg:ml-14">
@@ -85,7 +85,7 @@ const Page = () => {
                 </p>
               </div>
               {/* Show sizes SM and MD */}
-              <div className="lg:hidden ml-4 md:ml-[290px]">
+              <div className="lg:hidden ml-4 md:ml-[18.125rem]">
                 <Image
                   src={DATA[item].artist.image}
                   alt={DATA[item].artist.name}
@@ -96,7 +96,7 @@ const Page = () => {
               </div>
             </div>
             {/* Show only at LG size */}
-            <div className="hidden lg:block w-28 h-28 absolute bottom-56 lg:-bottom-8 left-[500px]">
+            <div className="hidden lg:block w-28 h-28 absolute bottom-56 lg:-bottom-8 left-[31.25rem]">
               <Image
                 src={DATA[item].artist.image}
                 alt={DATA[item].artist.name}
@@ -107,18 +107,18 @@ const Page = () => {
             </div>
           </div>
           {/* Texts */}
-          <div className="mt-52 md:mt-0 w-full md:w-[70%] h-[500px] lg:w-[40%]  lg:h-[610px] lg:p-10 relative">
-            <p className="text-light text-[100px] md:text-5xl absolute -top-14 right-2 md:right-32 md:top-14 lg:top-7 lg:right-1">
+          <div className="mt-52 md:mt-0 w-full md:w-[70%] h-[31.25rem] lg:w-[40%]  lg:h-[38.125rem] lg:p-10 relative">
+            <p className="text-light text-[6.25rem] md:text-5xl absolute -top-14 right-2 md:right-32 md:top-14 lg:top-7 lg:right-1">
               {DATA[item].year}
             </p>
             <div className="flex flex-col space-y-4 mt-2 md:mt-10 items-start lg:space-y-20  lg:mt-32">
-              <p className="md:w-[475px] md:h-[252] md:mt-20 lg:w-[368px] lg:h-[364px] z-10 text-base lg:ml-8 lg:-mt-4">
+              <p className="md:w-[29.69rem] md:h-[15.75rem] md:mt-20 lg:w-[23rem] lg:h-[22.75rem] z-10 text-base lg:ml-8 lg:-mt-4">
                 {DATA[item].description}
               </p>
               <Link
                 target="_blank"
                 href={DATA[item].source}
-                className="ml-0 lg:ml-8 underline text-[9px] tracking-widest text-dark"
+                className="ml-0 lg:ml-8 underline text-[0.5625rem] tracking-widest text-dark"
               >
                 GO TO SOURCE
               </Link>

@@ -22,7 +22,7 @@ const Modal = ({ open, handleOpen, image, name }) => {
             >
               CLOSE
             </p>
-            <div className="w-full h-[400px] md:h-[700px] lg:h-[900px] relative">
+            <div className="w-full h-[25rem] md:h-[43.75rem] lg:h-[56.25rem] relative">
               <Image
                 src={image}
                 alt={name}

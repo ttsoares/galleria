@@ -21,7 +21,7 @@ export default function Home() {
                 alt={img.name}
                 width={400}
                 height={712}
-                sizes="(max-width: 375px) 327px, (max-width: 960px) 324px, 327px"
+                sizes="(max-width: 375px) 100vw, (max-width: 960px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/70"></div>
               <div className="text-white absolute bottom-3 left-5 ">

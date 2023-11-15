@@ -7,15 +7,15 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      xs: ["12px", "15px"],
-      sm: ["13px", "17px"],
-      base: ["14px", "28px"],
-      lg: ["15px", "29px"],
-      xl: ["20px", "28px"],
-      "2xl": ["18px", "22px"],
-      "3xl": ["24px", "29px"],
-      "4xl": ["56px", "64px"],
-      "5xl": ["200px", "150px"],
+      xs: ["0.75rem", "0.938rem"],
+      sm: ["0.813rem", "1.63rem"],
+      base: ["0.875rem", "1.75rem"],
+      lg: ["0.938rem", "1.813rem"],
+      xl: ["1.25rem", "1.75rem"],
+      "2xl": ["1.125rem", "1.375rem"],
+      "3xl": ["1.5rem", "1.813rem"],
+      "4xl": ["3.5rem", "4rem"],
+      "5xl": ["12.5rem", "9.375rem"],
     },
     extend: {
       colors: {
